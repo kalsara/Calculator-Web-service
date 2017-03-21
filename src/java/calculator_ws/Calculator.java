@@ -24,8 +24,12 @@ public class Calculator {
         return "Hello " + txt + " !";
     }
 
-    /**
-     * Web service operation
-     */
+   
+
+   @WebMethod(operationName = "add_numbers")
+    public int add_numbers(@WebParam(name = "a") int a, @WebParam(name = "b") int b) {
+        //TODO write your implementation code here:
+        return a+b;
+    }
    
 }
